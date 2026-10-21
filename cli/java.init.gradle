@@ -1,0 +1,3 @@
+gradle.beforeProject { project ->
+    project.layout.buildDirectory.set(new File(gradle.startParameter.projectCacheDir.parentFile, 'java-build'))
+}
